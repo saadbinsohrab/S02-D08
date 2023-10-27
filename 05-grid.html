@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+        .container {
+            background-color: cadetblue;
+            display: grid;
+            grid-template-columns: 200px repeat(4, 1fr);
+            /* grid-template-columns: repeat(auto-fill, minmax(250px,1fr));             */
+            grid-template-rows: repeat(200px 100px 150px 300px);
+            /* place-items: center; */
+            gap: 5px;
+            width: 100%;
+            height: 100vh;
+            padding: 10px;
+        }
+        .box {
+            background-color: darkgray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #box1 {
+            background-color: lightblue;
+            grid-row: 1 / 5;
+        }
+        #box2 {
+            background-color: bisque;
+            grid-column: 2 / -1;
+        }
+        #box5 {
+            background-color: lightgrey;
+        }
+        #box6 {
+            
+            background-color: lightsteelblue;
+        }
+        #box7 {
+            background-color: rgba(240, 98, 98, 0.381);     
+            grid-column: 2 / 4;
+        }
+        #box8 {
+            background-color: rgba(187, 168, 145, 0.851);
+            grid-column: 4 / -1;
+        }
+        #box9 {
+            grid-column: 2 / 5;
+            background-color: lightsteelblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            box1 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla molestias labore odio eius, id odit architecto veniam ex laboriosam ducimus est sit quod rerum ipsum praesentium, molestiae sequi ad beatae. Autem ab, quo, consectetur voluptate similique explicabo soluta quis, aperiam dolorum culpa quod deleniti alias repellat inventore quasi debitis. Temporibus voluptates perspiciatis inventore expedita voluptas quam! Commodi aperiam impedit dolorem repellendus obcaecati illum quidem vero,</div>
+        <div class="box" id="box2">
+            box2 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam ipsum quisquam reiciendis totam harum assumenda, tempore sed quos odio saepe eaque. Molestias, nesciunt impedit. Quas numquam qui odio? Quod incidunt architecto temporibus asperiores id doloremque repellat, sed delectus necessitatibus harum praesentium, illum unde est aspernatur consectetur. Exercitationem, cumque at.</div>
+        <div class="box" id="box3">
+            box3
+        </div>
+        <div class="box" id="box4">
+            box4
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, neque.
+        </div>
+        <div class="box" id="box5">
+            box5
+        </div>
+        <div class="box" id="box6">
+            box6 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, neque.</div>
+        <div class="box" id="box7">
+            box7
+        </div>
+        <div class="box" id="box8">
+            box8
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </div>
+        <div class="box" id="box9">
+            box9
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit natus eum, eaque inventore placeat beatae at nostrum provident quod deserunt! Magnam, deleniti sequi! Vel, ullam totam inventore nam consequuntur voluptatum!
+        </div>
+        <div class="box" id="box10">
+            box10
+        </div>
+    </div>
+</body>
+</html>

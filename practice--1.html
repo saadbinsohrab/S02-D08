@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .section-1 {
+            background-image: url(asset/20341303.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-container {
+            border: 3px solid rgba(243, 229, 234, 0.722);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 50%;
+            height: 45vh;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 5px 2px 25px rgba(239, 93, 217, 0.552);
+            position: absolute;
+            backdrop-filter: blur(3px);
+        }
+        .log-title {
+            color: azure;
+        }
+        input {
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: white;
+            /* font-weight: bold; */
+            background-color: rgb(24, 4, 57);
+            border: 0;
+            border-bottom: 2px solid whitesmoke;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="section-1">
+        <div class="login-container">
+            <h1 class="log-title">Login</h1>
+            <input type="email" name="" id="" placeholder="email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="button" value="Login" style="width: 25%;">
+        </div>
+    </section>
+</body>
+</html>
